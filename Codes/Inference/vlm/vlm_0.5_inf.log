@@ -1,1 +1,42 @@
-
+=== GPU Info ===
+Sat Oct 25 09:47:47 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     Off |   00000000:41:00.0 Off |                    0 |
+|  0%   37C    P0             89W /  300W |       1MiB /  46068MiB |      2%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Current directory: /home/ajitvr/zahir.khan/IE643Proj
+Using device: cuda
+Loading processor...
+3510
+Test samples: 3510
+Initializing model...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Using hidden size: 576
+Total parameters: 230,577,280
+Trainable parameters: 9,556,096
+Percentage trainable: 4.14%
+Processed 25 batches
+Processed 50 batches
+Processed 75 batches
+Processed 100 batches
+Processed 125 batches
+Processed 150 batches
+Processed 175 batches
+Processed 200 batches
+Finished inference in 36.75798716147741 mins.
+---------Finished computation--------
