@@ -1,0 +1,50 @@
+=== GPU Info ===
+Sat Oct 25 22:05:16 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A40                     Off |   00000000:61:00.0 Off |                    0 |
+|  0%   30C    P0             73W /  300W |       1MiB /  46068MiB |      2%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+/home/ajitvr/24d0374/IE_643
+Test Dataset created with 3510 samples.
+Test DataLoader created with batch size 16.
+Total parameters: 530689
+RNNAnomalyDetector (student_model) initialized and moved to device.
+Starting evaluation...
+Processed 10 batches
+Processed 20 batches
+Processed 30 batches
+Processed 40 batches
+Processed 50 batches
+Processed 60 batches
+Processed 70 batches
+Processed 80 batches
+Processed 90 batches
+Processed 100 batches
+Processed 110 batches
+Processed 120 batches
+Processed 130 batches
+Processed 140 batches
+Processed 150 batches
+Processed 160 batches
+Processed 170 batches
+Processed 180 batches
+Processed 190 batches
+Processed 200 batches
+Processed 210 batches
+Finished inference in 0.09224314292271932 mins.
+---------Finished computation--------
