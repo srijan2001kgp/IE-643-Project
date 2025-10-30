@@ -25,12 +25,31 @@ The directory `Data_split` is compresssed to `Data_split.tar` and uploaded to Go
 
 ## Model training
 The code for training the *SmolVLMTSAD* model and *RNNAnomalyDetector* model are present in [Codes/Models](Codes/Models).
-
-To train SmolVLMTSAD* with $\alpha=0.5$, run the command
-```
-python vlm_train_0.5.py
-```
-This will create a directory `vlm_0.5`. The best model parameters will be saved as `smolvlm_best.pth` in this directory. Similarly the training loss and the validation loss will be saved in `train_losses.npy` and `val_losses.npy` respectively.
+  * SmolVLMTSAD: We need to download the **SmolVLM-Instruct** model using the Hugging Face CLI. First install `huggingface_hub` package with the CLI extras by running
+     ```
+     pip install huggingface_hub[cli]
+     ```
+     Download the model using the repository ID `HuggingFaceTB/SmolVLM-Instruct` as follows
+     ```
+     huggingface-cli download HuggingFaceTB/SmolVLM-Instruct
+     ```
+     This will create a directoty `models` in the current working directory and save all the files associated with the model in this directory. Now, we can go forward with finetuning *SmolVLMTSAD*.
+     To train *SmolVLMTSAD* with $\alpha=0.5$ i.e. using combined BCE loss and Cosine similarity loss in the loss function, run the command
+     ```
+     python vlm_train_0.5.py
+     ```
+     This will create a directory `vlm_0.5`. The best model parameters will be saved as `smolvlm_best.pth` in this directory. The code will also save the model parameters learnt adter every epoch. Similarly the training loss and the validation loss will be saved as `train_losses.npy` and `val_losses.npy` respectively.
+     
+     Similarly, for $\alpha=1$ i.e. using only Cosine similarity loss as the loss function, run
+     ```
+     python vlm_train_1.py
+     ```
+     Like the previous case, it will save all the output files in the directory `vlm_1`.
+   * RNNAnomalyDetector: To train *RNNAnomalyDetector* model using only the ground truth labels and without learning from *SmolVLMTSAD* model run
+      ```
+      python student_train.py
+      ```
+      The best parameters for the trained model, training losses, validation losses will be saved in a directory `LSTM_train`.
 
 ## Model Inference
 
