@@ -24,7 +24,7 @@ This will create a directory `Data_split`, shuffle the data randomly and create 
 The directory `Data_split` is compresssed to `Data_split.tar` and uploaded to Google drive.
 
 ## Model training
-The code for training the *SmolVLMTSAD* model and *RNNAnomalyDetector* model are present in `Codes/Models`. 
+The code for training the *SmolVLMTSAD* model and *RNNAnomalyDetector* model are present in [Codes/Models](Codes/Models). 
 
 ## Model Inference
 
