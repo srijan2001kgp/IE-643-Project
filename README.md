@@ -63,6 +63,7 @@ pip install -r requirement.txt
       ```
       python plot_losses.py
       ```
+      The plots are saved in [Codes/Plots](Codes/Plots) directory.
       
 
 ## Model Inference
