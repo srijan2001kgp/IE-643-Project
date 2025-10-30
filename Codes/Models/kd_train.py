@@ -334,7 +334,7 @@ def student_trainer(student_model,teacher_model,num_epoch,lrate,accumulation_ste
         num_training_steps=total_steps)
     best_val=float('inf')
     st_time=time.time()
-    save_path='KD_train_1/student_best.pth'
+    save_path='KD_train_0.5/student_best.pth'
     for epoch in range(num_epochs):
         print(f"\n------------- Epoch {epoch+1}/{num_epochs}---------------")
         train_loss = 0
@@ -392,7 +392,7 @@ def student_trainer(student_model,teacher_model,num_epoch,lrate,accumulation_ste
         train_loss /= num_batches
         print(f"Average Training Loss: {train_loss:.6f} Time taken: {(time.time()-st_time)/3600:.2f} hrs")
         train_losses.append(train_loss)
-        torch.save({'epoch': epoch,'model_state_dict': student_model.state_dict()},f'KD_train_1/Epoch_{epoch+1}.pth')
+        torch.save({'epoch': epoch,'model_state_dict': student_model.state_dict()},f'KD_train_0.5/Epoch_{epoch+1}.pth')
         print(f"Saved model after epoch {epoch+1}")
         # validation
         student_model.eval()
@@ -549,7 +549,7 @@ teacher_model = SmolVLMTSAD(
     freeze_text_encoder=True
 )
 
-teacher_model_path = f'vlm_3_bilstm/smolvlm_best.pth'
+teacher_model_path = f'vlm_0.5/smolvlm_best.pth'
 checkpoint = torch.load(teacher_model_path, map_location=DEVICE)
 teacher_model.load_state_dict(checkpoint['model_state_dict'])
 print("Teacher model state dict loaded successfully.")
@@ -568,13 +568,13 @@ student_model.to(DEVICE)
 print("RNNAnomalyDetector (student_model) initialized and moved to device.")
 summary(student_model,input_size=(batch_size,256,2))
 
-d_n=os.path.join(wd,"KD_train_1")
+d_n=os.path.join(wd,"KD_train_0.5")
 os.makedirs(d_n,exist_ok=True)
 print("Starting training...")
 torch.cuda.empty_cache()
 try:
     st_time=time.time()
-    train_loss,val_loss=student_trainer(student_model,teacher_model,NUM_EPOCH,2e-5,1,WARM_UP_STEP,1,2,DEVICE)
+    train_loss,val_loss=student_trainer(student_model,teacher_model,NUM_EPOCH,2e-5,1,WARM_UP_STEP,0.5,2,DEVICE)
     print(f"\nTraining completed successfully in {(time.time()-st_time)/3600:.4f} hours")
     np.save(f"{d_n}/train_losses.npy",np.array(train_loss).astype(np.float32))
     np.save(f"{d_n}/val_losses.npy",np.array(val_loss).astype(np.float32))
@@ -598,3 +598,4 @@ plt.grid(True)
 # Save the plot as a PDF
 plt.savefig(f"{d_n}/training_validation_loss.pdf")
 plt.show()
+
