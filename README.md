@@ -24,7 +24,10 @@ This will create a directory `Data_split`, shuffle the data randomly and create 
 The directory `Data_split` is compresssed to `Data_split.tar` and uploaded to Google drive.
 
 ## Model training
-The code for training the *SmolVLMTSAD* model and *RNNAnomalyDetector* model are present in [Codes/Models](Codes/Models).
+The code for training the *SmolVLMTSAD* model and *RNNAnomalyDetector* model are present in [Codes/Models](Codes/Models). To install the dependencies, run
+```
+pip install -r requirement.txt
+```
   * SmolVLMTSAD: We need to download the **SmolVLM-Instruct** model using the Hugging Face CLI. First install `huggingface_hub` package with the CLI extras by running
      ```
      pip install huggingface_hub[cli]
@@ -51,7 +54,18 @@ The code for training the *SmolVLMTSAD* model and *RNNAnomalyDetector* model are
       ```
       The best parameters for the trained model, training losses, validation losses will be saved in a directory `LSTM_train`.
 
-## Model Inference
+      To train *RNNAnomalyDetector* model with $\lambda=0.5$ i.e. using combined hard loss with ground truth labels and knowledge distillation loss run:
+      ```
+      python kd_train.py
+      ```
+      The best parameters for the trained model, training losses, validation losses will be saved in a directory `KD_train_0.5`. Similarly, we can do it for $\lambda=1$.
 
+## Model Inference
+Goto `Codes/Inference` directory for inference.
+ * **SmolVLMTSAD**: To infer for the setting $\alpha=0.5$ run:
+   ```
+   python vlm_0.5_infer.py
+   ```
+   
 ## GUI
 
