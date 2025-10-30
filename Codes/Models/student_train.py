@@ -278,7 +278,7 @@ except Exception as e:
     print(f"Training failed: {str(e)}")
 
 # Load the saved loss data
-d_n = os.path.join(os.getcwd(), "KD_train")
+d_n = os.path.join(os.getcwd(), "LSTM_train")
 train_losses = np.load(f"{d_n}/train_losses.npy")
 val_losses = np.load(f"{d_n}/val_losses.npy")
 
@@ -294,3 +294,4 @@ plt.grid(True)
 # Save the plot as a PDF
 plt.savefig(f"{d_n}/training_validation_loss.pdf")
 plt.show()
+
