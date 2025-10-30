@@ -24,7 +24,13 @@ This will create a directory `Data_split`, shuffle the data randomly and create 
 The directory `Data_split` is compresssed to `Data_split.tar` and uploaded to Google drive.
 
 ## Model training
-The code for training the *SmolVLMTSAD* model and *RNNAnomalyDetector* model are present in [Codes/Models](Codes/Models). 
+The code for training the *SmolVLMTSAD* model and *RNNAnomalyDetector* model are present in [Codes/Models](Codes/Models).
+
+To train SmolVLMTSAD* with $\alpha=0.5$, run the command
+```
+python vlm_train_0.5.py
+```
+This will create a directory `vlm_0.5`. The best model parameters will be saved as `smolvlm_best.pth` in this directory. Similarly the training loss and the validation loss will be saved in `train_losses.npy` and `val_losses.npy` respectively.
 
 ## Model Inference
 
