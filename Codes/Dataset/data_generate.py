@@ -6,7 +6,7 @@ import numpy as np
 import os, csv, time, gc
 
 # Base directory for all outputs
-BASE_DIR = r"C:\Users\srija\Desktop\IITB\Semester 2\IE 643\Project\mit-bih-arrhythmia-data"
+BASE_DIR = os.getcwd()
 
 # Ensure directory exists
 os.makedirs(BASE_DIR, exist_ok=True)
