@@ -1,0 +1,9 @@
+transformers==4.57.0
+torch==2.8.0+cu126
+torchinfo==1.8.0
+torchvision==0.23.0+cu126
+scikit-learn==1.7.2
+scipy==1.16.2
+pillow==11.0.0
+numpy==2.1.2
+pandas==2.3.3
