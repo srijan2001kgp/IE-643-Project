@@ -4,7 +4,7 @@
 This repository contains the codes related to this project. Goto the `Codes` directory. All the codes are written in Python 3.11.13 and are executed on Linux server.
 
 ## Dataset 
-The code to generate the dataset is located in `Codes/Dataset` directory. We need the following libraries to run the code:
+The code to generate the dataset is located in [Codes/Dataset](Codes/Dataset) directory. We need the following libraries to run the code:
   * wfdb
   * matplotlib
   * numpy
