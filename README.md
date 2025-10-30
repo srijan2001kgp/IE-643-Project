@@ -28,7 +28,7 @@ The code for training the *SmolVLMTSAD* model and *RNNAnomalyDetector* model are
 ```
 pip install -r requirement.txt
 ```
-  * SmolVLMTSAD: We need to download the **SmolVLM-Instruct** model using the Hugging Face CLI. First install `huggingface_hub` package with the CLI extras by running
+  * **SmolVLMTSAD**: We need to download the **SmolVLM-Instruct** model using the Hugging Face CLI. First install `huggingface_hub` package with the CLI extras by running
      ```
      pip install huggingface_hub[cli]
      ```
@@ -48,7 +48,7 @@ pip install -r requirement.txt
      python vlm_train_1.py
      ```
      Like the previous case, it will save all the output files in the directory `vlm_1`.
-   * RNNAnomalyDetector: To train *RNNAnomalyDetector* model using only the ground truth labels and without learning from *SmolVLMTSAD* model run
+   * **RNNAnomalyDetector**: To train *RNNAnomalyDetector* model using only the ground truth labels and without learning from *SmolVLMTSAD* model run
       ```
       python student_train.py
       ```
@@ -59,6 +59,11 @@ pip install -r requirement.txt
       python kd_train.py
       ```
       The best parameters for the trained model, training losses, validation losses will be saved in a directory `KD_train_0.5`. Similarly, we can do it for $\lambda=1$.
+    * **Plot training and validation losses**: To plot the graphs of train and validation loss versus epochs run
+      ```
+      python plot_losses.py
+      ```
+      
 
 ## Model Inference
  * **SmolVLMTSAD**: Goto [Codes/Inference/vlm](Codes/Inference/vlm) directory for inference of the VLM model.To infer for the setting $\alpha=0.5$ run:
@@ -76,5 +81,19 @@ pip install -r requirement.txt
    python student_infer.py
    ```
    The outputs will be saved like *SmolVLMTSAD* case.
+* **Inference scores**: Goto [Codes/Inference](Codes/Inference). To get the **Mean Squeezed Precision(MSP)** and **Mean Squeezed Recall(MSR)** scores run:
+   ```
+   python plot_inference.py
+   ```
+   
 ## GUI
+First install `streamlit` in python
+```
+pip install streamlit
+```
+To run the `Streamlit` application goto [Codes/GUI](Codes/GUI). Then run
+```
+streamlit run 0_Homepage.py
+```
+This command will launch a local development server and open the Streamlit application in the web browser, typically at `http://localhost:8501`. You can open the `Parent model` or `Student model` page to select time series samples and view annotated anomaly predictions.
 
