@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor
 image_dir = 'Plots_ECG'         # folder with images
 csv_path = 'labels_ECG.csv'    # CSV with 70200 rows
 npy_path = 'ECG_segments.npy'    # NumPy array (70200, 256, 2)
-output_dir = 'Data_reduced'        # output folder
+output_dir = 'Data_split'        # output folder
 os.makedirs(output_dir, exist_ok=True   )
 # ==== CREATE OUTPUT STRUCTURE ====
 splits = ['train', 'val', 'test']
@@ -17,11 +17,9 @@ for split in splits:
 
 # ==== LOAD DATA ====
 df = pd.read_csv(csv_path,header=None)
-df=df.iloc[:8000,:]
 arr = np.load(npy_path)
-arr=arr[:8000]
 print(len(df))
-assert len(df) == len(arr) == 8000, "Mismatch in number of samples!"
+assert len(df) == len(arr) == 70200, "Mismatch in number of samples!"
 
 # ==== SHUFFLE ====
 np.random.seed(42)
