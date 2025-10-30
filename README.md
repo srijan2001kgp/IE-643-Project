@@ -61,11 +61,20 @@ pip install -r requirement.txt
       The best parameters for the trained model, training losses, validation losses will be saved in a directory `KD_train_0.5`. Similarly, we can do it for $\lambda=1$.
 
 ## Model Inference
-Goto `Codes/Inference` directory for inference.
- * **SmolVLMTSAD**: To infer for the setting $\alpha=0.5$ run:
+ * **SmolVLMTSAD**: Goto [Codes/Inference/vlm](Codes/Inference/vlm) directory for inference of the VLM model.To infer for the setting $\alpha=0.5$ run:
    ```
    python vlm_0.5_infer.py
    ```
-   
+   The model probabilities will be saved as `all_probs_0.5.npy`, the true labels as `all_labels_0.5.npy` and the time series data as `all_ts_0.5.npy`. These files will be needed for plotting the inferences.
+   To infer for the setting $\alpha=1$ run:
+   ```
+   python vlm_1_infer.py
+   ```
+   The output files will be saved as before.
+* **RNNAnomalyDetector**: Goto [Codes/Inference/lstm](Codes/Inference/lstm) to make inference of the student model. Set the directory of the student model in line number 183 of `student_infer.py` depending on the configuration. For $\lambda=0$, set d_n to `LSTM_train`, for $\lambda=0.5$ set d_n to `KD_train_0.5` and for $\lambda=1$ set d_n to `KD_train_1`. Now run
+   ```
+   python student_infer.py
+   ```
+   The outputs will be saved like *SmolVLMTSAD* case.
 ## GUI
 
