@@ -1,11 +1,6 @@
-import streamlit as st
-import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import recall_score,precision_score
 
-st.title('LSTM')
-st.header('Model information')
-st.markdown('''Total parameters: 530,689''')
 def squeeze_array(GT, PRD, w):
     n = len(GT)
     ones = np.where(GT == 1)[0]
@@ -92,58 +87,11 @@ def cut_and_infer(prob,cut_v):
 
     return np.array(predicted_indices)
 
-def plot_image(probs,labels,ts):
-
-    st.header('Resulting plot')
-    st.write(":orange[Predicted anomaly locations]")
-    ind_p=cut_and_infer(probs,np.mean(probs))
-    st.write(ind_p)
-    ind_t=np.where(labels==1)[0]
-    st.write(":orange[True anomaly locations]")
-    st.write(ind_t)
-    # a1,b1=squeeze_array(labels,probs,2)
-    # score_r=recall_score(a1,b1,average='binary')
-    # score_p=precision_score(a1,b1,average='binary')
-    # st.markdown(f"**Recall score:** {score_r:.4f}") 
-    # st.markdown(f"**Precision score:** {score_p:.4f}")
-    
-    a=np.arange(0,256)
-    fig,ax=plt.subplots(2,1,figsize=(10,10))
-    col=['red','blue']
-    for i in range(2):
-        ax[i].plot(ts[:,i],color=col[i])
-        ax[i].scatter(a[ind_t],ts[ind_t,i],color='cyan',label='true anomalies')
-        ax[i].scatter(a[ind_p],ts[ind_p,i],color='magenta',label='predicted anomalies')
-        ax[i].set_xlabel('Time steps')
-        ax[i].set_ylabel(f'Channel {i+1} values')
-        ax[i].legend()
-    st.pyplot(fig)
-
-st.write("Choose among the $3$ models with:")
-st.write(r"a) $\lambda=0$ : No knowledge distillation, using only the student model.")
-st.write(r"a) $\lambda=0.5$ : Knowledge distillation by using a combination of BCE loss with true labels and BCE loss with teacher model's logits.")
-st.write(r"b) $\lambda=1$ : Knowledge distillation by using only BCE loss with teacher model's logits.")
-model_option=option = st.selectbox(
-    'Choose the model',
-    [0,0.5,1],
-	index=None,
-	placeholder='Choose model type'
-)
-
-if model_option is not None:
-	lt_txt=r"\alpha=0.5" if model_option == 0.5 else r"\alpha=1" if model_option ==1 else r"\alpha=0"
-	st.write(f"Student model with ${lt_txt}$ chosen")
-	labels=np.load(f'lstm_{model_option}\\student_labels_{model_option}.npy')
-	ts_d=np.load(f'lstm_{model_option}\\student_ts_{model_option}.npy')
-	probs=np.load(f'lstm_{model_option}\\student_probs_{model_option}.npy')
-	ids=np.arange(len(labels))+1
-	option = st.selectbox(
-		'Choose the data ID',
-		ids,
-		index=None,
-		placeholder='Click to view dropdown'
-	)
-
-	if option is not None:
-		st.write('ID chosen is ',option)
-		plot_image(probs[option-1], labels[option-1],ts_d[option-1])
+def get_scores(probs,labels):
+    idx1=cut_and_infer(probs,np.mean(probs))
+    pred=np.zeros(256,dtype=np.int8)
+    pred[idx1]=1
+    a,b=squeeze_array(labels,pred,2)
+    score_r=recall_score(a,b,average='binary')
+    score_p=precision_score(a,b,average='binary')
+    return score_r,score_p

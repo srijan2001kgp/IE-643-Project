@@ -7,8 +7,8 @@ st.set_page_config(
 st.title('Vision Language Model Guided Knowledge Distillation for Time Series Anomaly Detection')
 
 # Load and display an image
-image = Image.open("ECG_cover_image.jpg")
-st.image(image, caption="Source: https://cardiology.com.sg/12-lead-ecg/", width=400)
+image = Image.open("fin_ts.png")
+st.image(image, caption="Financial time series data", width=400)
 
 st.header('About')
 
@@ -25,7 +25,3 @@ st.markdown('''
             **SRIJAN DAS**, *24D0374*, PhD, *Department of Computer Science and Engineering, IIT Bombay*\n                        
             **ZAHIR KHAN**, *25D2015*, PhD, *Centre for Machine Intelligence & Data Science, IIT Bombay*
             ''')
-
-
-#options=st.sidebar.radio('Pages',options=['Home','Data statistics','Data header','Data plot'])
-# the uploaded file is assigned to this variable
