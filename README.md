@@ -1,5 +1,9 @@
 # VLM Guided Knowledge Distillation for TSAD
 
+This project is done for the partial fulfillment of credits for the course **Deep Learning: Theory and Practice(IE643)** during Autumn semster 2025-26 at IIT Bombay.
+### Contributors
+ * [Srijan Das](https://sites.google.com/view/srijandas321)
+ * [Zahir Khan]()
 
 This repository contains the codes related to this project. Goto the [Codes](Codes) directory. All the codes are written in Python 3.11.13 and are executed on Linux server.
 
