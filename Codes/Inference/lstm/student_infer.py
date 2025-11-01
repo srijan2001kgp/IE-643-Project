@@ -6,64 +6,6 @@ import numpy as np
 import pandas as pd
 warnings.filterwarnings('ignore')
 
-class KD_Dataset(Dataset):
-    """
-    Dataset for multilabel classification with binary vectors and time series data
-    """
-    def __init__(
-        self,
-        binary_labels: np.ndarray,  # Shape: (n_samples, n_classes)
-        time_series_data: np.ndarray, # Shape: (n_samples, seq_len, num_channels)
-    ):
-        self.binary_labels = torch.tensor(binary_labels, dtype=torch.float32)
-        self.time_series_data = torch.tensor(time_series_data, dtype=torch.float32)
-
-    def __len__(self):
-        return len(self.binary_labels)
-
-    def __getitem__(self, idx):
-       
-        inputs={}
-        inputs['labels'] = self.binary_labels[idx]
-        # Add time series data
-        inputs['time_series_data'] = self.time_series_data[idx]
-        return inputs
-
-def squeeze_array(GT, PRD, w):
-    n = len(GT)
-    ones = np.where(GT == 1)[0]
-    if ones.size == 0:
-        return np.array([0], dtype=int)
-
-    intervals = [(max(0, i - w), min(n - 1, i + w)) for i in ones]
-    intervals.sort(key=lambda x: x[0])
-    modf_GT = []
-    modf_PRD=[]
-    if intervals[0][0] > 0:
-       [modf_GT.append(0) for _ in range(intervals[0][0])]
-       [modf_PRD.append(PRD[i]) for i in range(intervals[0][0])]
-    i=0
-    while i<len(intervals)-1:
-      modf_GT.append(1)
-      if sum(PRD[intervals[i][0]:intervals[i][1]+1])>0:
-        modf_PRD.append(1)
-      else:
-        modf_PRD.append(0)
-      s1, e1 = intervals[i]
-      s2, e2 = intervals[i+1]
-      i=i+1
-      if s2-e1-1>0:
-        [modf_GT.append(0) for _ in range(s2-e1-1)]
-        [modf_PRD.append(PRD[j]) for j in range(e1+1,s2)]
-    modf_GT.append(1)
-    if sum(PRD[intervals[-1][0]:intervals[-1][1]+1])>0:
-        modf_PRD.append(1)
-    else:
-        modf_PRD.append(0)
-    if intervals[-1][1] <= n - 1:
-      [modf_GT.append(0) for _ in range(n - intervals[-1][1] - 1)]
-      [modf_PRD.append(PRD[i]) for i in range(intervals[-1][1]+1,n)]
-    return np.array(modf_GT, dtype=int), np.array(modf_PRD, dtype=int)
 
 def cut_and_infer(prob,cut_v):
   # Convert input to numpy array if it's a list
@@ -115,6 +57,66 @@ def cut_and_infer(prob,cut_v):
         predicted_indices.append(s+np.argmax(prob[s:e+1]))
 
     return np.array(predicted_indices)
+
+def squeeze_array(GT, PRD, w):
+    n = len(GT)
+    ones = np.where(GT == 1)[0]
+    if ones.size == 0:
+        return np.array([0], dtype=int)
+
+    intervals = [(max(0, i - w), min(n - 1, i + w)) for i in ones]
+    intervals.sort(key=lambda x: x[0])
+    modf_GT = []
+    modf_PRD=[]
+    if intervals[0][0] > 0:
+       [modf_GT.append(0) for _ in range(intervals[0][0])]
+       [modf_PRD.append(PRD[i]) for i in range(intervals[0][0])]
+    i=0
+    while i<len(intervals)-1:
+      modf_GT.append(1)
+      if sum(PRD[intervals[i][0]:intervals[i][1]+1])>0:
+        modf_PRD.append(1)
+      else:
+        modf_PRD.append(0)
+      s1, e1 = intervals[i]
+      s2, e2 = intervals[i+1]
+      i=i+1
+      if s2-e1-1>0:
+        [modf_GT.append(0) for _ in range(s2-e1-1)]
+        [modf_PRD.append(PRD[j]) for j in range(e1+1,s2)]
+    modf_GT.append(1)
+    if sum(PRD[intervals[-1][0]:intervals[-1][1]+1])>0:
+        modf_PRD.append(1)
+    else:
+        modf_PRD.append(0)
+    if intervals[-1][1] <= n - 1:
+      [modf_GT.append(0) for _ in range(n - intervals[-1][1] - 1)]
+      [modf_PRD.append(PRD[i]) for i in range(intervals[-1][1]+1,n)]
+    return np.array(modf_GT, dtype=int), np.array(modf_PRD, dtype=int)
+
+
+class KD_Dataset(Dataset):
+    """
+    Dataset for multilabel classification with binary vectors and time series data
+    """
+    def __init__(
+        self,
+        binary_labels: np.ndarray,  # Shape: (n_samples, n_classes)
+        time_series_data: np.ndarray, # Shape: (n_samples, seq_len, num_channels)
+    ):
+        self.binary_labels = torch.tensor(binary_labels, dtype=torch.float32)
+        self.time_series_data = torch.tensor(time_series_data, dtype=torch.float32)
+
+    def __len__(self):
+        return len(self.binary_labels)
+
+    def __getitem__(self, idx):
+       
+        inputs={}
+        inputs['labels'] = self.binary_labels[idx]
+        # Add time series data
+        inputs['time_series_data'] = self.time_series_data[idx]
+        return inputs
 
 class RNNAnomalyDetector(nn.Module):
     def __init__(self, input_size=2, hidden_size=128, num_layers=2, bidirectional=True, dropout=0.3):
@@ -247,3 +249,4 @@ if __name__=='__main__':
     main()
     print("---------Finished computation--------")
     gc.collect()
+
