@@ -144,10 +144,6 @@ class SmolVLMTSAD(nn.Module):
             nn.Linear(hidden_size, num_classes)
         ).float()
 
-
-        self.num_classes = num_classes
-        #self.use_fp32 = use_fp32
-
     def forward(
         self,
         pixel_values=None,
@@ -667,3 +663,4 @@ try:
     np.save(f"{d_n}/val_losses.npy",np.array(val_losses).astype(np.float32))
 except Exception as e:
     print(f"Training failed: {str(e)}")
+
