@@ -116,17 +116,15 @@ class SmolVLMTSAD(nn.Module):
                 if any(keyword in name.lower() for keyword in ['embed', 'layer']) and 'vision' not in name.lower():
                     param.requires_grad = False
 
-        # SOLUTION 2: Ensure classification layers are in FP32
-        # Projection layer to combine vision and text features
-        self.projection = nn.Sequential(
+       
+        self.lin = nn.Sequential(
             nn.Linear(hidden_size, hidden_size),
             nn.LayerNorm(hidden_size),
             nn.GELU(),
             nn.Dropout(dropout_rate)
         ).float()  # Explicitly set to FP32
 
-        # Multilabel classification head
-        # Replaced with LSTM
+      
 
         self.lstm_classifier = nn.LSTM(
             input_size=hidden_size,
@@ -134,7 +132,7 @@ class SmolVLMTSAD(nn.Module):
             num_layers=1,
             batch_first=True,
             bidirectional=True,
-            dropout=0.3  # LSTM dropout is applied between layers
+            dropout=0.3  
         ).float()
 
         self.linear_classifier = nn.Sequential(
@@ -177,11 +175,11 @@ class SmolVLMTSAD(nn.Module):
             features = features.view(features.size(0), -1)
 
         # Project features
-        features = self.projection(features)
+        features = self.lin(features)
 
         lstm_out, _ = self.lstm_classifier(features.unsqueeze(1)) # Add sequence length dimension
 
-        # Take the output of the last time step
+        
         lstm_out = lstm_out.squeeze(1) # Remove sequence length dimension
 
         # Pass through linear classifier
@@ -663,4 +661,5 @@ try:
     np.save(f"{d_n}/val_losses.npy",np.array(val_losses).astype(np.float32))
 except Exception as e:
     print(f"Training failed: {str(e)}")
+
 
