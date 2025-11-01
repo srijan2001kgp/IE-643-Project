@@ -531,7 +531,7 @@ train_dataloader = DataLoader(
 val_dataloader = DataLoader(
     val_dataset,
     batch_size=batch_size,
-    shuffle=True,
+    shuffle=False,
     drop_last=True,
     pin_memory=True if DEVICE == 'cuda' else False,
     collate_fn=custom_collate_fn
@@ -598,4 +598,5 @@ plt.grid(True)
 # Save the plot as a PDF
 plt.savefig(f"{d_n}/training_validation_loss.pdf")
 plt.show()
+
 
