@@ -456,7 +456,7 @@ def main():
         np.save(f'{d_n}/all_probs_0.5.npy',all_probs)
         np.save(f'{d_n}/all_labels_0.5.npy',all_labels)
         np.save(f'{d_n}/all_ts_0.5.npy',all_ts)
-        """
+        
         total_recall=float(0)
         total_precision=float(0)
 
@@ -477,28 +477,10 @@ def main():
             total_precision+=score_p
 
         print(f"Average recall (binary) {total_recall/len(all_probs):.8f}\n Average precision {total_precision/len(all_probs):.8f}")
-        
-        num_samples=2
-        print(f" Plotting the inference results for {num_samples} test samples")
-        for j in range(num_samples):
-            x_val=np.arange(0,256)
-            y=all_ts[j]
-            #print("shape of y",y.shape)
-            a=cut_and_infer(all_probs[j],np.mean(all_probs[j]))
-            b=np.where(all_labels[j]==1)[0]
-            print('Data ',str(j),' Predicted indices ',a)
-            print('True indices ',b,'\n')
-            fig,ax=plt.subplots(figsize=(10,6),nrows=2,ncols=1)
-            for i in range(2):          
-                ax[i].plot(y[:,i],color='blue',alpha=0.3)
-                ax[i].scatter(x_val[a],y[a,i],color='red')
-                ax[i].scatter(x_val[b],y[b,i],color='green') 
-            plt.savefig(f'{d_n}/inference_result_{j}.pdf') 
-            plt.close()
-            
-       """
+    
 if __name__ == "__main__":
     main()
     print("---------Finished computation--------")
     gc.collect()
+
 
