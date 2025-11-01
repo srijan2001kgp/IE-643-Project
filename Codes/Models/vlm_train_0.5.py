@@ -327,12 +327,7 @@ class VLMTrainer:
 
         a=np.array(smoothed_labels_batch)
         return torch.tensor(a,dtype=torch.float32)
-    """
-    def apply_label_smoothing(self, labels):
-             if self.label_smoothing > 0:
-            labels = labels * (1 - self.label_smoothing) + self.label_smoothing / 2
-        return labels
-    """    
+        
     def custom_loss_function(self,model_logits,true_labels,alpha=0.5):
         #print("Inside loss computation")
         #true_labels=true_labels.to(torch.float32)
@@ -657,6 +652,7 @@ try:
     np.save(f"{d_n}/val_losses.npy",np.array(val_losses).astype(np.float32))
 except Exception as e:
     print(f"Training failed: {str(e)}")
+
 
 
 
