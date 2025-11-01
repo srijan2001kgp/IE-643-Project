@@ -27,8 +27,8 @@ indices = np.random.permutation(len(df))
 
 # ==== SPLIT ====
 n_total = len(indices)
-n_train = int(0.8 * n_total)
-n_val = int(0.1 * n_total)
+n_train = int(0.9 * n_total)
+n_val = int(0.05 * n_total)
 n_test = n_total - n_train - n_val
 
 splits_idx = {
