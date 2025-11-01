@@ -68,7 +68,49 @@ class MultilabelVLMDataset(Dataset):
 
         return inputs
 
+def custom_collate_fn(batch):
+    """
+    Custom collate function to handle variable-length sequences
+    """
+    # Separate the components
+    pixel_values = [item.get('pixel_values') for item in batch if item.get('pixel_values') is not None]
+    input_ids = [item.get('input_ids') for item in batch if item.get('input_ids') is not None]
+    attention_masks = [item.get('attention_mask') for item in batch if item.get('attention_mask') is not None]
+    labels = [item['labels'] for item in batch]
 
+    # Stack labels
+    labels = torch.stack(labels)
+
+    collated = {'labels': labels}
+
+    # Handle pixel values
+    if pixel_values:
+        collated['pixel_values'] = torch.stack(pixel_values)
+
+    # Handle input_ids and attention_mask with padding
+    if input_ids:
+        # Find max length
+        max_len = max(ids.size(0) for ids in input_ids)
+
+        # Pad input_ids
+        padded_input_ids = []
+        padded_attention_masks = []
+
+        for i, ids in enumerate(input_ids):
+            pad_len = max_len - ids.size(0)
+            padded_ids = torch.cat([ids, torch.zeros(pad_len, dtype=ids.dtype)])
+            padded_input_ids.append(padded_ids)
+
+            if i < len(attention_masks):
+                mask = attention_masks[i]
+                padded_mask = torch.cat([mask, torch.zeros(pad_len, dtype=mask.dtype)])
+                padded_attention_masks.append(padded_mask)
+
+        collated['input_ids'] = torch.stack(padded_input_ids)
+        if padded_attention_masks:
+            collated['attention_mask'] = torch.stack(padded_attention_masks)
+
+    return collated
 class SmolVLMTSAD(nn.Module):
     """
     SmolVLM for anomaly detection tasks
@@ -476,50 +518,6 @@ class VLMTrainer:
                 continue
 
         return self.train_losses,self.val_metrics
-    
-def custom_collate_fn(batch):
-    """
-    Custom collate function to handle variable-length sequences
-    """
-    # Separate the components
-    pixel_values = [item.get('pixel_values') for item in batch if item.get('pixel_values') is not None]
-    input_ids = [item.get('input_ids') for item in batch if item.get('input_ids') is not None]
-    attention_masks = [item.get('attention_mask') for item in batch if item.get('attention_mask') is not None]
-    labels = [item['labels'] for item in batch]
-
-    # Stack labels
-    labels = torch.stack(labels)
-
-    collated = {'labels': labels}
-
-    # Handle pixel values
-    if pixel_values:
-        collated['pixel_values'] = torch.stack(pixel_values)
-
-    # Handle input_ids and attention_mask with padding
-    if input_ids:
-        # Find max length
-        max_len = max(ids.size(0) for ids in input_ids)
-
-        # Pad input_ids
-        padded_input_ids = []
-        padded_attention_masks = []
-
-        for i, ids in enumerate(input_ids):
-            pad_len = max_len - ids.size(0)
-            padded_ids = torch.cat([ids, torch.zeros(pad_len, dtype=ids.dtype)])
-            padded_input_ids.append(padded_ids)
-
-            if i < len(attention_masks):
-                mask = attention_masks[i]
-                padded_mask = torch.cat([mask, torch.zeros(pad_len, dtype=mask.dtype)])
-                padded_attention_masks.append(padded_mask)
-
-        collated['input_ids'] = torch.stack(padded_input_ids)
-        if padded_attention_masks:
-            collated['attention_mask'] = torch.stack(padded_attention_masks)
-
-    return collated
 
 import pandas as pd
 
@@ -661,5 +659,6 @@ try:
     np.save(f"{d_n}/val_losses.npy",np.array(val_losses).astype(np.float32))
 except Exception as e:
     print(f"Training failed: {str(e)}")
+
 
 
