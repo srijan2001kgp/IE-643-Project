@@ -48,11 +48,6 @@ class MultilabelVLMDataset(Dataset):
             truncation=False  # Disable truncation to avoid token mismatch
         )
 
-        # Print processed image size (shape of pixel_values)
-        # if 'pixel_values' in inputs:
-            # print(f"Processed image shape (pixel_values): {inputs['pixel_values'].shape}")
-
-
         # If the sequence is too long, we'll handle it differently
         if inputs['input_ids'].size(1) > self.max_length:
             # Truncate manually while preserving image tokens structure
@@ -662,6 +657,7 @@ try:
     np.save(f"{d_n}/val_losses.npy",np.array(val_losses).astype(np.float32))
 except Exception as e:
     print(f"Training failed: {str(e)}")
+
 
 
 
