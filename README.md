@@ -102,3 +102,8 @@ streamlit run 0_Homepage.py
 ```
 This command will launch a local development server and open the Streamlit application in the web browser, typically at `http://localhost:8501`. You can open the `Parent model` or `Student model` page to select time series samples and view annotated anomaly predictions.
 
+## Colab notebooks for demo
+
+ * The demo for **SmolVLMTSAD** inference is given in this [link](https://colab.research.google.com/drive/1hrjy-uS72InP_yDC1D7PGnmHYAa5241i).
+ * The demo for **RNNAnomalyDetector** inference is given in this [link](https://colab.research.google.com/drive/1636MakbZH1gPnN3Rek10CqsVZc5J9YDj).
+
