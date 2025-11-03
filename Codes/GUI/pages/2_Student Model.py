@@ -2,7 +2,6 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-from scores import get_scores
 from student_inference import get_inference
 
 st.title('RNNAnomalyDetector')
@@ -103,4 +102,5 @@ if model_option is not None:
             c.markdown(f"<div style='text-align:center; border:1px solid #ccc; padding:5px; border-radius:5px;'>{ind_t[i]}</div>", unsafe_allow_html=True)
         st.header('Evaluation Scores')        
         plot_image(ind_p,ind_t,np.squeeze(ts))
+
         st.text(f'Recall score :{score_r:.6f} precision score {score_p:.6f}\n')
