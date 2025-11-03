@@ -23,33 +23,6 @@ def plot_image(ind_p,ind_t,ts):
         ax[i].legend()
     st.pyplot(fig)
 
-# def plot_image(probs,labels,ts):
-
-#     st.write(":orange[Predicted anomaly locations]")
-#     ind_p=cut_and_infer(probs,np.mean(probs))
-#     # st.write(ind_p)
-#     cols = st.columns(len(ind_p))
-#     for i, c in enumerate(cols):
-#         c.markdown(f"<div style='text-align:center; border:1px solid #ccc; padding:5px; border-radius:5px;'>{ind_p[i]}</div>", unsafe_allow_html=True)
-#     st.write(":blue[True anomaly locations]")
-#     ind_t=np.where(labels==1)[0]
-#     # st.write(ind_t)
-#     cols = st.columns(len(ind_t))
-#     for i, c in enumerate(cols):
-#         c.markdown(f"<div style='text-align:center; border:1px solid #ccc; padding:5px; border-radius:5px;'>{ind_t[i]}</div>", unsafe_allow_html=True)
-#     a=np.arange(0,256)
-#     st.header('Resulting plot')
-#     fig,ax=plt.subplots(2,1,figsize=(10,10))
-#     col=['red','blue']
-#     for i in range(2):
-#         ax[i].plot(ts[:,i],color=col[i],alpha=0.7)
-#         ax[i].scatter(a[ind_t],ts[ind_t,i],marker='*',color='magenta',alpha=1,label='true anomalies',s=80)
-#         ax[i].scatter(a[ind_p],ts[ind_p,i],marker='o',color='green',alpha=1,label='predicted anomalies',s=60)
-#         ax[i].set_xlabel('Time steps')
-#         ax[i].set_ylabel(f'Channel {i+1} values')
-#         ax[i].legend()
-#     st.pyplot(fig)
-
 st.header('Model variants')
 st.write("Choose among the $3$ models with:")
 st.write(r"a) $\lambda=0$ : No knowledge distillation, using only the student model.")
@@ -104,3 +77,4 @@ if model_option is not None:
         plot_image(ind_p,ind_t,np.squeeze(ts))
 
         st.text(f'Recall score :{score_r:.6f} precision score {score_p:.6f}\n')
+
