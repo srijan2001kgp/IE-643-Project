@@ -40,6 +40,11 @@ model_option= st.selectbox(
 if model_option is not None:
     lt_txt=r"\lambda=0.5" if model_option == 0.5 else r"\lambda=1" if model_option ==1 else r"\lambda=0"
     st.write(f"Student model with ${lt_txt}$ chosen")
+    df=pd.read_csv('test/test.csv')
+    ids=df.iloc[:,0]
+    labels=df.iloc[:,1:].to_numpy()
+    ts_arr=np.load('test/test.npy')[:len(labels)]
+    ids=np.arange(len(labels))+1
     if model_option!=0:
         st.write("Choose parent model used for knowledge distillation:")
         pm= st.selectbox(
@@ -61,38 +66,58 @@ if model_option is not None:
                     model_pth='kd_0.5_only.pth'
                 else:
                     model_pth='kd_1_only.pth'
+            st.write('Choose the data ID:')
+            idx = st.selectbox(
+                'Choose the data ID',
+                ids,
+                index=None,
+                placeholder='Click to view dropdown',
+                label_visibility='collapsed'
+            )
+            if idx is not None:
+                st.write('ID chosen is ',idx)
+                idx=idx-1
+                y=ts_arr[idx]
+                ts=np.expand_dims(y,0)
+                y=labels[idx]
+                lbl=np.expand_dims(y,0)
+                ind_p,ind_t,score_r,score_p=get_inference(lbl,ts,model_pth)
+                cols = st.columns(len(ind_p))
+                for i, c in enumerate(cols):
+                    c.markdown(f"<div style='text-align:center; border:1px solid #ccc; padding:5px; border-radius:5px;'>{ind_p[i]}</div>", unsafe_allow_html=True)
+                st.write(":blue[True anomaly locations]")
+                cols = st.columns(len(ind_t))
+                for i, c in enumerate(cols):
+                    c.markdown(f"<div style='text-align:center; border:1px solid #ccc; padding:5px; border-radius:5px;'>{ind_t[i]}</div>", unsafe_allow_html=True)
+                st.header('Evaluation Scores')        
+                plot_image(ind_p,ind_t,np.squeeze(ts))
+                st.text(f'Recall score :{score_r:.6f} precision score {score_p:.6f}\n')
+                
     else:
         model_pth='student_best.pth'
-    df=pd.read_csv('test/test.csv')
-    ids=df.iloc[:,0]
-    labels=df.iloc[:,1:].to_numpy()
-    ts_arr=np.load('test/test.npy')[:len(labels)]
-
-    ids=np.arange(len(labels))+1
-    st.write('Choose the data ID:')
-    idx = st.selectbox(
-        'Choose the data ID',
-        ids,
-        index=None,
-        placeholder='Click to view dropdown',
-        label_visibility='collapsed'
-    )
-
-    if idx is not None:
-        st.write('ID chosen is ',idx)
-        idx=idx-1
-        y=ts_arr[idx]
-        ts=np.expand_dims(y,0)
-        y=labels[idx]
-        lbl=np.expand_dims(y,0)
-        ind_p,ind_t,score_r,score_p=get_inference(lbl,ts,model_pth)
-        cols = st.columns(len(ind_p))
-        for i, c in enumerate(cols):
-            c.markdown(f"<div style='text-align:center; border:1px solid #ccc; padding:5px; border-radius:5px;'>{ind_p[i]}</div>", unsafe_allow_html=True)
-        st.write(":blue[True anomaly locations]")
-        cols = st.columns(len(ind_t))
-        for i, c in enumerate(cols):
-            c.markdown(f"<div style='text-align:center; border:1px solid #ccc; padding:5px; border-radius:5px;'>{ind_t[i]}</div>", unsafe_allow_html=True)
-        st.header('Evaluation Scores')        
-        plot_image(ind_p,ind_t,np.squeeze(ts))
-        st.text(f'Recall score :{score_r:.6f} precision score {score_p:.6f}\n')
+        st.write('Choose the data ID:')
+        idx = st.selectbox(
+            'Choose the data ID',
+            ids,
+            index=None,
+            placeholder='Click to view dropdown',
+            label_visibility='collapsed'
+        )   
+        if idx is not None:
+            st.write('ID chosen is ',idx)
+            idx=idx-1
+            y=ts_arr[idx]
+            ts=np.expand_dims(y,0)
+            y=labels[idx]
+            lbl=np.expand_dims(y,0)
+            ind_p,ind_t,score_r,score_p=get_inference(lbl,ts,model_pth)
+            cols = st.columns(len(ind_p))
+            for i, c in enumerate(cols):
+                c.markdown(f"<div style='text-align:center; border:1px solid #ccc; padding:5px; border-radius:5px;'>{ind_p[i]}</div>", unsafe_allow_html=True)
+            st.write(":blue[True anomaly locations]")
+            cols = st.columns(len(ind_t))
+            for i, c in enumerate(cols):
+                c.markdown(f"<div style='text-align:center; border:1px solid #ccc; padding:5px; border-radius:5px;'>{ind_t[i]}</div>", unsafe_allow_html=True)
+            st.header('Evaluation Scores')        
+            plot_image(ind_p,ind_t,np.squeeze(ts))
+            st.text(f'Recall score :{score_r:.6f} precision score {score_p:.6f}\n')
