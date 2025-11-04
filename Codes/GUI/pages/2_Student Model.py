@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+from scores import get_scores
 from student_inference import get_inference
 
 st.title('RNNAnomalyDetector')
@@ -28,21 +29,38 @@ st.write("Choose among the $3$ models with:")
 st.write(r"a) $\lambda=0$ : No knowledge distillation, using only the student model.")
 st.write(r"a) $\lambda=0.5$ : Knowledge distillation by using a combination of BCE loss with true labels and BCE loss with teacher model's logits.")
 st.write(r"b) $\lambda=1$ : Knowledge distillation by using only BCE loss with teacher model's logits.")
-model_option=option = st.selectbox(
+model_option= st.selectbox(
     'Choose the model',
     [0,0.5,1],
 	index=None,
-	placeholder='Choose model type'
+	placeholder='Choose model type',
+    label_visibility='collapsed'
 )
 
 if model_option is not None:
     lt_txt=r"\lambda=0.5" if model_option == 0.5 else r"\lambda=1" if model_option ==1 else r"\lambda=0"
     st.write(f"Student model with ${lt_txt}$ chosen")
-    model_pth=''
-    if model_option==0.5:
-        model_pth='kd_0.5_best.pth'
-    elif model_option==1:
-        model_pth='kd_1_best.pth'
+    if model_option!=0:
+        st.write("Choose parent model used for knowledge distillation:")
+        pm= st.selectbox(
+        'Choose the model',
+        ['SmolVLMTSAD-0.5','SmolVLMTSAD-1'],
+        index=None,
+        placeholder='Choose model type',
+        label_visibility ='collapsed')
+        if pm is not None:
+            st.write(f"Parent model chosen is {pm}")
+            model_pth=''
+            if pm=='SmolVLMTSAD-0.5':
+                if model_option==0.5:
+                    model_pth='kd_0.5_hyb_best.pth'
+                else:
+                    model_pth='kd_1_hyb_best.pth'
+            else:
+                if model_option==0.5:
+                    model_pth='kd_0.5_only.pth'
+                else:
+                    model_pth='kd_1_only.pth'
     else:
         model_pth='student_best.pth'
     df=pd.read_csv('test/test.csv')
@@ -51,11 +69,13 @@ if model_option is not None:
     ts_arr=np.load('test/test.npy')[:len(labels)]
 
     ids=np.arange(len(labels))+1
+    st.write('Choose the data ID:')
     idx = st.selectbox(
         'Choose the data ID',
         ids,
         index=None,
-        placeholder='Click to view dropdown'
+        placeholder='Click to view dropdown',
+        label_visibility='collapsed'
     )
 
     if idx is not None:
@@ -75,6 +95,4 @@ if model_option is not None:
             c.markdown(f"<div style='text-align:center; border:1px solid #ccc; padding:5px; border-radius:5px;'>{ind_t[i]}</div>", unsafe_allow_html=True)
         st.header('Evaluation Scores')        
         plot_image(ind_p,ind_t,np.squeeze(ts))
-
         st.text(f'Recall score :{score_r:.6f} precision score {score_p:.6f}\n')
-
