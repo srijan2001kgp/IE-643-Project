@@ -89,28 +89,32 @@ def plot_image(probs,labels,ts):
 
 
 st.header('Model variants')  
-st.write("Choose between two models with:")
-st.write(r"a) $\alpha=0.5$ : Uses a combination of BCE loss and cosine similarity loss.")
-st.write(r"b) $\alpha=1$ : Uses only cosine similarity loss.")
+st.write("Choose between the two models:")
+st.write(r"a) SmolVLMTSAD-0.5 : Uses a combination of BCE loss and cosine similarity loss.")
+st.write(r"b) SmolVLMTSAD-1 : Uses only cosine similarity loss.")
 model_option=st.selectbox(
     'Choose the model',
-    [0.5,1],
+    ['SmolVLMTSAD-0.5','SmolVLMTSAD-1'],
 	index=None,
-	placeholder='Choose model type'
+	placeholder='Choose model type',
+    label_visibility ='collapsed'
 )
 
 if model_option is not None:
-    lt_txt=r"\alpha=0.5" if model_option == 0.5 else r"\alpha=1"
+    lt_txt=r"\alpha=0.5" if model_option == 'SmolVLMTSAD-0.5' else r"\alpha=1"
     st.write(f"Model with ${lt_txt}$ chosen")
-    labels=np.load(f'vlm_{model_option}\\all_labels_{model_option}.npy')
-    ts_d=np.load(f'vlm_{model_option}\\all_ts_{model_option}.npy')
-    probs=np.load(f'vlm_{model_option}\\all_probs_{model_option}.npy')
+    alpha=0.5 if model_option=='SmolVLMTSAD-0.5' else 1
+    labels=np.load(f'vlm_{alpha}\\all_labels_{alpha}.npy')
+    ts_d=np.load(f'vlm_{alpha}\\all_ts_{alpha}.npy')
+    probs=np.load(f'vlm_{alpha}\\all_probs_{alpha}.npy')
     ids=np.arange(len(labels))+1
+    st.write('Choose the data ID:')
     option = st.selectbox(
         'Choose the data ID',
         ids,
         index=None,
-        placeholder='Click to view dropdown'
+        placeholder='Click to view dropdown',
+        label_visibility='collapsed'
     )
 
     if option is not None:
