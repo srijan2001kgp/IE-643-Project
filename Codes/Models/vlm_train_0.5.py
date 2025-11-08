@@ -292,19 +292,19 @@ class VLMTrainer:
         return torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda)
         
     def gaussian_kernel(self,w):
-    """
-    Creates a 1D Gaussian kernel. size 31, sigma=5
-
-    Args:
-        w: The window size for the kernel.
-
-    Returns:
-        A normalized 1D Gaussian kernel.
-    """
-    sigma = w//3
-    x = np.linspace(-w, w, 2*w+1)
-    kernel = np.exp(-(x**2) / (2 * sigma**2))
-    return kernel
+        """
+        Creates a 1D Gaussian kernel. size 31, sigma=5
+    
+        Args:
+            w: The window size for the kernel.
+    
+        Returns:
+            A normalized 1D Gaussian kernel.
+        """
+        sigma = w//3
+        x = np.linspace(-w, w, 2*w+1)
+        kernel = np.exp(-(x**2) / (2 * sigma**2))
+        return kernel
     
     def apply_label_smoothing( self,labels_batch,w=5):
         """Apply label smoothing to binary labels and convolve with Gaussian kernel"""
@@ -652,6 +652,7 @@ try:
     np.save(f"{d_n}/val_losses.npy",np.array(val_losses).astype(np.float32))
 except Exception as e:
     print(f"Training failed: {str(e)}")
+
 
 
 
