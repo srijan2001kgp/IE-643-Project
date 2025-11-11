@@ -109,4 +109,4 @@ This command will launch a local development server and open the Streamlit appli
 
 # Novelty Assessment
 
-We have used Graph Convolutional Network on top of `SmolVLM` backbone, The codes for the new VLM models are in [Codes/Models/GCN_based](Codes/Models/GCN_based). To run this code you have to install *torch_geometric* package in addition to the packages in [requirement.txt]().
+We have used Graph Convolutional Network on top of `SmolVLM` backbone, The codes for the new VLM models are in [Codes/Models/GCN_based](Codes/Models/GCN_based). To run this code you have to install *torch_geometric* package in addition to the packages in [requirement.txt](Codes/Models/requirement.txt).
