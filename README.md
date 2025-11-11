@@ -107,3 +107,6 @@ This command will launch a local development server and open the Streamlit appli
  * The demo for **SmolVLMTSAD** inference is given in this [link](https://colab.research.google.com/drive/1hrjy-uS72InP_yDC1D7PGnmHYAa5241i).
  * The demo for **RNNAnomalyDetector** inference is given in this [link](https://colab.research.google.com/drive/1636MakbZH1gPnN3Rek10CqsVZc5J9YDj).
 
+# Novelty Assessment
+
+We have used Graph Convolutional Network on top of `SmolVLM` backbone, The codes for the new VLM models are in [Codes/Models/GCN_based](Codes/Models/GCN_based). To run this code you have to install *torch_geometric* package in addition to the packages in [requirement.txt]().
