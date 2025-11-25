@@ -1,0 +1,40 @@
+=== GPU Info ===
+Mon Nov 24 16:00:44 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L40S                    Off |   00000000:C1:00.0 Off |                    0 |
+| N/A   44C    P0             86W /  350W |       1MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Running on node: cn40-l40.prajna.iitb.ac.in
+Job started at: Mon Nov 24 16:00:45 IST 2025
+---------------------------
+/home/ajitvr/24d0374/IE_643
+Test Dataset created with 3510 samples.
+Test DataLoader created with batch size 16.
+Total parameters: 530689
+RNNAnomalyDetector (student_model) initialized and moved to device.
+Starting evaluation...
+Processed 50 batches
+Processed 100 batches
+Processed 150 batches
+Processed 200 batches
+Finished inference in 0.5973353385925293 seconds.
+Average recall (binary) 0.68798827
+ Average precision 0.79202873
+---------Finished computation--------
+---------------------------
+Job finished at: Mon Nov 24 16:00:55 IST 2025
