@@ -1,0 +1,7053 @@
+=== GPU Info ===
+Thu Nov 13 12:15:50 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.86.15              Driver Version: 570.86.15      CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L40S                    Off |   00000000:C0:00.0 Off |                    0 |
+| N/A   33C    P0             80W /  350W |       1MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Running on node: cn40-l40.prajna.iitb.ac.in
+Job started at: Thu Nov 13 12:15:51 IST 2025
+---------------------------
+Current directory: /home/ajitvr/24d0374/IE_643
+Using device: cuda
+Loading processor...
+3510
+Test samples: 3510
+Initializing model...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Using hidden size: 576
+Total parameters: 230,577,280
+Trainable parameters: 9,556,096
+Percentage trainable: 4.14%
+Processed 50 batches
+Processed 100 batches
+Processed 150 batches
+Processed 200 batches
+Finished inference in 26.367801932493844 mins.
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.600000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :0.400000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.600000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.400000 precision score 0.400000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.600000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.600000 precision score 0.600000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.800000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.600000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.600000 precision score 0.600000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.600000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.600000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.250000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.833333 precision score 0.833333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.600000 precision score 0.600000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.600000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.750000 precision score 0.600000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.400000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :0.500000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.600000 precision score 0.600000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.800000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.400000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.400000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.200000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.600000 precision score 0.600000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :0.500000 precision score 0.400000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.200000 precision score 0.200000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.400000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.600000 precision score 0.600000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.200000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.600000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.600000 precision score 0.600000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.600000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.600000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.600000 precision score 0.600000
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.166667 precision score 0.200000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.400000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :0.250000 precision score 0.400000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.400000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.285714 precision score 0.400000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :0.500000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.250000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.400000 precision score 0.400000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.750000 precision score 0.600000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.400000 precision score 0.500000
+
+Recall score :0.500000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.400000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.833333 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.833333 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.600000 precision score 0.600000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.200000 precision score 0.200000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :0.600000 precision score 0.600000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.200000 precision score 0.400000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.400000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.400000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 0.800000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.400000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.800000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.250000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.500000
+
+Recall score :0.600000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.800000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.166667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.333333
+
+Recall score :0.333333 precision score 0.250000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.600000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.285714 precision score 0.400000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.400000 precision score 0.400000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.400000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.250000 precision score 0.333333
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.333333 precision score 0.333333
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.714286 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.666667
+
+Recall score :1.000000 precision score 0.500000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.750000 precision score 0.750000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.333333
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :0.500000 precision score 0.250000
+
+Recall score :0.000000 precision score 0.000000
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :0.500000 precision score 0.500000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 1.000000
+
+Recall score :1.000000 precision score 0.666667
+
+Recall score :0.666667 precision score 0.666667
+
+Recall score :1.000000 precision score 1.000000
+
+Average recall (binary) 0.83788120
+ Average precision 0.83051750
+---------Finished computation--------
+---------------------------
+Job finished at: Thu Nov 13 12:43:56 IST 2025
