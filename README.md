@@ -1,6 +1,6 @@
 # VLM Guided Knowledge Distillation for TSAD
 
-This project is done for the partial fulfillment of credits for the course **Deep Learning: Theory and Practice(IE643)** during Autumn semster 2025-26 at IIT Bombay.
+This project is done for the partial fulfillment of credits for the course **Deep Learning: Theory and Practice(IE643)** during Autumn semster 2025-26 at IIT Bombay. The materials for this project including report, code walkthroudh, code demo, poster, etc. are present can be accessed from this [link](https://drive.google.com/drive/folders/122Sl4xa-G1qGfuxYvxS8EsDsL05oR0W_?usp=drive_link).
 ### Team members
  * [Srijan Das](https://sites.google.com/view/srijandas321)
  * [Zahir Khan](https://github.com/Zahir-Khan98)
